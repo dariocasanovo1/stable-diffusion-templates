@@ -36,9 +36,9 @@ ESRGAN_MODELS=(
 
 CONTROLNET_MODELS=(
 
-'https://huggingface.co/thibaud/controlnet-openpose-sdxl-1.0/resolve/main/OpenPoseXL2.safetensors'
 'https://huggingface.co/lllyasviel/sd_control_collection/blob/main/thibaud_xl_openpose.safetensors'
-
+'https://huggingface.co/OzzyGT/controlnet-openpose-sdxl-1.0/resolve/main/diffusion_pytorch_model.fp16.safetensors'
+'https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors'
 
 )
 
