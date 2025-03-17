@@ -9,40 +9,37 @@ PIP_PACKAGES=()
 EXTENSIONS=(
     'https://github.com/Mikubill/sd-webui-controlnet'
     'https://github.com/Bing-su/adetailer'
-    'https://github.com/pharmapsychotic/clip-interrogator'
       	
 )
 
 CHECKPOINT_MODELS=(
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/CHECKPOINT/juggernautXL_juggXIByRundiffusion.safetensors'
+    'https://huggingface.co/RunDiffusion/Juggernaut-XI-v11/blob/main/Juggernaut-XI-byRunDiffusion.safetensors'
+    'https://civitai.com/api/download/models/456538?type=Model&format=SafeTensor&size=pruned&fp=fp16'
 )
 
 LORA_MODELS=(
   
-    'https://huggingface.co/thibaud/controlnet-openpose-sdxl-1.0/resolve/main/control-lora-openposeXL2-rank256.safetensors'
 )
 
 VAE_MODELS=(
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/VAE/sdxl_vae.safetensors'
+    'https://huggingface.co/RunDiffusion/Juggernaut-XI-v11/blob/main/vae/diffusion_pytorch_model.bin'
 )
 
 ESRGAN_MODELS=(
 
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/ESRGAN/2xHFA2kOmniSR.pth'
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/ESRGAN/4x-UltraSharp.pth'
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/ESRGAN/8x_NMKD-Superscale_150000_G.pth'
 
 )
 
 CONTROLNET_MODELS=(
 
-'https://huggingface.co/lllyasviel/sd_control_collection/blob/main/thibaud_xl_openpose.safetensors'
-'https://huggingface.co/OzzyGT/controlnet-openpose-sdxl-1.0/resolve/main/diffusion_pytorch_model.fp16.safetensors'
-'https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors'
+'https://huggingface.co/TencentARC/t2i-adapter-openpose-sdxl-1.0/blob/main/diffusion_pytorch_model.safetensors'
+'https://huggingface.co/kohya-ss/controlnet-lllite/blob/main/controllllite_v01032064e_sdxl_pose_anime_v2_500-1000.safetensors'
+'https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0/blob/main/diffusion_pytorch_model.safetensors'
 
 )
 
-EMBEDDINGS=()
+TEXT_MODELS=('https://huggingface.co/RunDiffusion/Juggernaut-XI-v11/blob/main/text_encoder/pytorch_model.bin'
+)
 
 function provisioning_start() {
 
@@ -74,6 +71,9 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
+    provisioning_get_models \
+        "${WORKSPACE}/storage/stable_diffusion/models/text_encoder" \
+        "${TEXT_MODELS[@]}"
      
     PLATFORM_ARGS=""
     if [[ $XPU_TARGET = "CPU" ]]; then
