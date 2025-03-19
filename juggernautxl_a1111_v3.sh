@@ -7,7 +7,7 @@ APT_PACKAGES=()
 PIP_PACKAGES=()
 
 EXTENSIONS=(
-    #'https://github.com/Mikubill/sd-webui-controlnet'
+    'https://github.com/Mikubill/sd-webui-controlnet'
     'https://github.com/Bing-su/adetailer'
       	
 )
