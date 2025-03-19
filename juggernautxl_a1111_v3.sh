@@ -33,7 +33,7 @@ ESRGAN_MODELS=(
 CONTROLNET_MODELS=(
 
 
-
+'https://huggingface.co/lllyasviel/ControlNet-v1-1/blob/main/control_v11p_sd15_openpose.pth'
 
 )
 
