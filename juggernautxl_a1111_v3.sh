@@ -33,8 +33,12 @@ ESRGAN_MODELS=(
 
 CONTROLNET_MODELS=(
 
-'https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/blob/main/diffusion_pytorch_model_promax.safetensors'
+
 'https://huggingface.co/lllyasviel/sd_control_collection/blob/main/ip-adapter_xl.pth'
+'https://huggingface.co/TencentARC/t2i-adapter-openpose-sdxl-1.0/blob/main/diffusion_pytorch_model.safetensors'
+'https://huggingface.co/kohya-ss/controlnet-lllite/blob/main/controllllite_v01032064e_sdxl_pose_anime_v2_500-1000.safetensors'
+'https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0/blob/main/diffusion_pytorch_model.safetensors'
+
 
 )
 
