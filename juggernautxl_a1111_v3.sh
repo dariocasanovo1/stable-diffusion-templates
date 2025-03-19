@@ -14,7 +14,6 @@ EXTENSIONS=(
 
 CHECKPOINT_MODELS=(
     'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/CHECKPOINT/juggernautXL_juggXIByRundiffusion.safetensors'
-    'https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE/blob/main/Realistic_Vision_V6.0_NV_B1_inpainting.safetensors'
 )
 
 LORA_MODELS=(
