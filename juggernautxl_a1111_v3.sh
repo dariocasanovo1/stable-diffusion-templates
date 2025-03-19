@@ -19,8 +19,6 @@ CHECKPOINT_MODELS=(
 
 LORA_MODELS=(
   
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/LORA/age_slider-sdxl.safetensors'
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/LORA/looking_at_viewer.safetensors'
 
 )
 
@@ -29,7 +27,6 @@ VAE_MODELS=(
 )
 
 ESRGAN_MODELS=(
-    'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/ESRGAN/2xHFA2kOmniSR.pth'
     'https://huggingface.co/datasets/AddictiveFuture/sdxl-1-0-models-backup/resolve/main/ESRGAN/4x-UltraSharp.pth'
 
 )
@@ -37,8 +34,6 @@ ESRGAN_MODELS=(
 CONTROLNET_MODELS=(
 
 'https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/blob/main/diffusion_pytorch_model_promax.safetensors'
-'https://huggingface.co/lllyasviel/sd_control_collection/blob/main/diffusers_xl_canny_mid.safetensors'
-'https://huggingface.co/lllyasviel/sd_control_collection/blob/main/t2i-adapter_xl_openpose.safetensors'
 'https://huggingface.co/lllyasviel/sd_control_collection/blob/main/ip-adapter_xl.pth'
 
 )
